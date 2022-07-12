@@ -1,4 +1,4 @@
-package com.minkiapps.hos.migration.api;
+package com.minkiapps.shared.api;
 
 import com.minkiapps.shared.model.Joke;
 import io.reactivex.rxjava3.core.Single;

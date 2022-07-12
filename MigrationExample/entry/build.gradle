@@ -14,7 +14,6 @@ ohos {
             }
         }
     }
-    
 }
 
 dependencies {
@@ -22,10 +21,6 @@ dependencies {
 
     implementation 'com.minkiapps.shared:KotlinLib:0.1'
 
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
-    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
-    implementation "io.reactivex.rxjava3:rxjava:3.1.5"
     implementation 'com.google.dagger:dagger:2.42'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.42'
 

@@ -5,7 +5,8 @@ import butterknife.ButterKnife;
 import com.bumptech.glide.Glide;
 import com.minkiapps.hos.migration.MyApplication;
 import com.minkiapps.hos.migration.ResourceTable;
-import com.minkiapps.hos.migration.api.ApiService;
+import com.minkiapps.shared.ConstantKt;
+import com.minkiapps.shared.api.ApiService;
 import com.minkiapps.shared.util.Logger;
 import io.reactivex.rxjava3.disposables.Disposable;
 import io.reactivex.rxjava3.openharmony.schedulers.OpenHarmonySchedulers;
@@ -49,7 +50,7 @@ public class MainAbilitySlice extends AbilitySlice {
         ButterKnife.bind(this, rootComponent);
 
         Glide.with(this)
-                .load("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTgwNTA1Mzc0MzgwNTMzMzky/gettyimages-150327735-copy.jpg")
+                .load(ConstantKt.CHUCK_NORRIS_IMAGE_URL)
                 .into(image);
 
         loadJoke.setClickedListener(component -> {

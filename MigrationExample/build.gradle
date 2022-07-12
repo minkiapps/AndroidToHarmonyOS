@@ -6,9 +6,9 @@ ohos {
     signingConfigs {
         debug {
             storeFile file('signing/minkiapps.p12')
-            storePassword '00000018A7CAAC709AA5E2C52AFBF2FDF2E0C888530D04FF648108C05D7F802A0D00191783D75081'
+            storePassword '00000018B37C06D5386965B0391F0D1F7595790674490555969AB4EB04ABC00333A7C8BC1D0D7DFB'
             keyAlias = 'minkiapps'
-            keyPassword '0000001898C1AEFD43D67A2C67BC50CC8AC8CEA362B3ED546417F6F66E5B40C11AA8369D26F86A2E'
+            keyPassword '00000018FFF6665E443ABB032C2E453F33954418B6934CD5D7973878A29F693B7CACD968911C6D12'
             signAlg = 'SHA256withECDSA'
             profile file('signing/allDebug.p7b')
             certpath file('signing/minkiapps.cer')
