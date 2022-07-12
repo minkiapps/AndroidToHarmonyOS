@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    ohos:rebound_effect="true"
+    ohos:id="$+id:dl_ability_main_root"
+    ohos:focusable="focus_enable"
+    ohos:focusable_in_touch="true"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <DirectionalLayout
+        ohos:bottom_padding="48vp"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <com.bumptech.glide.load.resource.gif.drawableability.DraweeView
+            ohos:top_margin="16vp"
+            ohos:layout_alignment="horizontal_center"
+            ohos:id="$+id:dv_ability_main_top_image"
+            ohos:height="77vp"
+            ohos:width="100vp"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:layout_alignment="horizontal_center"
+            ohos:text="Chuck Norris Joke"
+            ohos:text_size="18fp"/>
+
+        <Text
+            ohos:id="$+id:t_ability_main_load_joke"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:grey_rect_c4"
+            ohos:layout_alignment="horizontal_center"
+            ohos:padding="8vp"
+            ohos:text="Load New Joke"
+            ohos:top_margin="8vp"/>
+
+        <Text
+            ohos:id="$+id:t_ability_main_joke"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:end_margin="24vp"
+            ohos:hint="Joke comes here..."
+            ohos:multiple_lines="true"
+            ohos:start_margin="24vp"
+            ohos:text_alignment="center"
+            ohos:top_margin="8vp"/>
+
+    </DirectionalLayout>
+</ScrollView>
