@@ -14,12 +14,12 @@
         ohos:width="match_parent"
         ohos:orientation="vertical">
 
-        <com.bumptech.glide.load.resource.gif.drawableability.DraweeView
+        <Image
             ohos:top_margin="16vp"
             ohos:layout_alignment="horizontal_center"
             ohos:id="$+id:dv_ability_main_top_image"
-            ohos:height="77vp"
-            ohos:width="100vp"/>
+            ohos:height="64vp"
+            ohos:width="64vp"/>
 
         <Text
             ohos:height="match_content"

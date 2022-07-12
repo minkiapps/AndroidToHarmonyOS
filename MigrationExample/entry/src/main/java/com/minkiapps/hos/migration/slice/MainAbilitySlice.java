@@ -3,7 +3,6 @@ package com.minkiapps.hos.migration.slice;
 import butterknife.BindComponent;
 import butterknife.ButterKnife;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.gif.drawableability.DraweeView;
 import com.minkiapps.hos.migration.MyApplication;
 import com.minkiapps.hos.migration.ResourceTable;
 import com.minkiapps.hos.migration.api.ApiService;
@@ -14,6 +13,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.Component;
+import ohos.agp.components.Image;
 import ohos.agp.components.Text;
 
 import javax.inject.Inject;
@@ -29,7 +29,7 @@ public class MainAbilitySlice extends AbilitySlice {
     private Component rootComponent;
 
     @BindComponent(ResourceTable.Id_dv_ability_main_top_image)
-    DraweeView image;
+    Image image;
 
     @BindComponent(ResourceTable.Id_t_ability_main_load_joke)
     Component loadJoke;
@@ -49,8 +49,7 @@ public class MainAbilitySlice extends AbilitySlice {
         ButterKnife.bind(this, rootComponent);
 
         Glide.with(this)
-                .asGif()
-                .load("https://media4.giphy.com/media/BIuuwHRNKs15C/200.gif")
+                .load("https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTgwNTA1Mzc0MzgwNTMzMzky/gettyimages-150327735-copy.jpg")
                 .into(image);
 
         loadJoke.setClickedListener(component -> {
@@ -73,21 +72,9 @@ public class MainAbilitySlice extends AbilitySlice {
     }
 
     @Override
-    protected void onForeground(Intent intent) {
-        super.onForeground(intent);
-        image.startGif();
-    }
-
-    @Override
     protected void onActive() {
         super.onActive();
         rootComponent.requestFocus();
-    }
-
-    @Override
-    protected void onBackground() {
-        super.onBackground();
-        image.stopGif();
     }
 
     @Override
