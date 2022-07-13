@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_activity_main"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:textColor="?android:textColorPrimary"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Chuck Norris Joke"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/tv_ability_main_load_joke"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:text="Load New Joke"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:textColor="?android:textColorPrimary"
+        android:id="@+id/tv_ability_main_joke"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Joke comes here..."
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
